@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>ExpSets</title>
+    <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../../vendor/materialize/dist/css/materialize.min.css">
+    <!-- concatenate css -->
+    <link rel="stylesheet" href="../../common/css/all.min.css">
+</head>
+
+<body class="home-index">
+    <!-- login -->
+    <div class="row liuxin-nom">
+        <div id="app-login" class="app-login modal col s10 offset-s1 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+            <div class="row">
+                <h4 class="center"><img src="../../../assets/imgs/logo_black.svg" /></h4>
+            </div>
+            <div class="app-login__content modal-content">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="app-login__username" type="text" class="validate">
+                        <label for="app-login__username">用户名</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="app-login__pw" type="password" class="validate">
+                        <label for="app-login__pw">密码</label>
+                    </div>
+                    <div class="app-login__auxiliary row">
+                        <div class="col s12 m6 offset-m1">
+                            <input type="checkbox" id="app-login__checkbox-remember" />
+                            <label for="app-login__checkbox-remember">记住登录？</label>
+                        </div>
+                        <div class="col s8 offset-s4  m4">
+                            <a class="app-login__signup" href="#app-signup" class="grey-text">没有账号？注册</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="app-login__btn-login modal-action modal-close waves-effect waves-light btn">登录</a>
+                <a class="waves-effect waves-light btn-flat">忘记密码？</a>
+            </div>
+        </div>
+    </div>
+    <!-- signup -->
+    <div id="app-signup" class="app-signup modal">
+        <div class="modal-content">
+            <h4 class="center"><img src="../../../assets/imgs/logo_black.svg" /></h4>
+            <form action="#">
+                <div class="input-field">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" id="app-signup__username" class="validate" data-length="10">
+                    <label for="app-signup__username" data-error="该用户名已存在" data-success="OK">用户名</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="app-signup__email" class="validate">
+                    <label for="app-signup__email" data-error="邮箱格式错误" data-success="OK">邮箱</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" id="app-signup__pw" class="validate">
+                    <label for="app-signup__pw" data-error="密码格式错误" data-success="OK">密码</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a class="app-signup__btn-signup modal-action modal-close waves-effect waves-light btn">注册</a>
+            <a href="#app-login" class="app-signup__btn-login modal-action modal-close waves-effect waves-light btn-flat">已有账号？登录</a>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="app-header navbar-fixed">
+        <nav class="app-header__nav background-color--transparent z-depth-0">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="slide-out" class="button-collapse app-header__btn-slide-nav"><i class=" nav-icon-menu material-icons">menu</i></a>
+                <a href="#" class="app-header__logo-link brand-logo">
+                    <img src="../../../assets/imgs/logo.svg" />
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">文章</a></li>
+                    <li><a href="#">问答</a></li>
+                    <li>
+                        <a class="waves-effect waves-light btn" href="#app-login">登录|注册</a>
+                    </li>
+                </ul>
+                <ul class="right hide-on-large-only">
+                    <a href="#app-login" class="waves-effect">登录|注册</a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- drawer -->
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="userView">
+                <div class="background">
+                </div>
+                <a href="#"><img class="circle" src="../../../assets/imgs/head_img_1.png"></a>
+                <a href="#"><span class="white-text name">liuxin</span></a>
+                <a href="#"><span class="white-text email">475212506@qq.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">home</i>首页</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">文章</a></li>
+        <li><a href="#!"><i class="material-icons">border_color</i>最新文章</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">问答</a></li>
+        <li><a href="#!"><i class="material-icons">chat</i>热门提问</a></li>
+    </ul>
+    <!-- carousel -->
+    <div class="carousel__container">
+        <div class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-item white-text" href="#one!">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+    </div>
+    <!-- FAB -->
+    <div class="fixed-action-btn click-to-toggle">
+        <a class="btn-floating btn-large">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">add</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">keyboard_arrow_up</i></a></li>
+        </ul>
+    </div>
+    <!-- main content -->
+    <div class="home-index__content">
+        <div class="row">
+            <div class="col s12">
+                <!-- card list -->
+                <div class="row">
+                    <div class="col s12 m6 l4 xl3">
+                        <div class="card hoverable">
+                            <div class="card-img-container card-image">
+                                <img class="card-img" src="../../../assets/imgs/img-card-1.JPG">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="divider" style="margin: 8px 0"></div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-css3.svg">css3
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-html5.svg">html5
+                                </div>
+                            </div>
+                            <div class="card-action right-align">
+                                <a class="waves-effect waves-light btn-flat" href="../../post/html/article.html">阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <div class="card hoverable">
+                            <div class="card-img-container card-image">
+                                <img class="card-img" src="../../../assets/imgs/img-card-2.JPG">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="divider" style="margin: 8px 0"></div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-css3.svg">css3
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-html5.svg">html5
+                                </div>
+                            </div>
+                            <div class="card-action right-align">
+                                <a class="waves-effect waves-light btn-flat" href="#">阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <div class="card hoverable">
+                            <div class="card-img-container card-image">
+                                <img class="card-img" src="../../../assets/imgs/img-card-3.JPG">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="divider" style="margin: 8px 0"></div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-css3.svg">css3
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-html5.svg">html5
+                                </div>
+                            </div>
+                            <div class="card-action right-align">
+                                <a class="waves-effect waves-light btn-flat" href="#">阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <div class="card hoverable">
+                            <div class="card-img-container card-image">
+                                <img class="card-img" src="../../../assets/imgs/img-card-4.JPG">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="divider" style="margin: 8px 0"></div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-javascript.svg">javascript
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-css3.svg">css3
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-html5.svg">html5
+                                </div>
+                            </div>
+                            <div class="card-action right-align">
+                                <a class="waves-effect waves-light btn-flat" href="#">阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <div class="card hoverable">
+                            <div class="card-img-container card-image">
+                                <img class="card-img" src="../../../assets/imgs/img-card-5.JPG">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="divider" style="margin: 8px 0"></div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-javascript.svg">javascript
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-css3.svg">css3
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-html5.svg">html5
+                                </div>
+                            </div>
+                            <div class="card-action right-align">
+                                <a class="waves-effect waves-light btn-flat" href="#">阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4 xl3">
+                        <div class="card hoverable">
+                            <div class="card-img-container card-image">
+                                <img class="card-img" src="../../../assets/imgs/img-card-6.JPG">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                <div class="divider" style="margin: 8px 0"></div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-javascript.svg">javascript
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-css3.svg">css3
+                                </div>
+                                <div class="chip">
+                                    <img src="../../../assets/icons/social-html5.svg">html5
+                                </div>
+                            </div>
+                            <div class="card-action right-align">
+                                <a class="waves-effect waves-light btn-flat" href="#">阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <ul class="pagination center-align">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!">6</a></li>
+                    <li class="waves-effect"><a href="#!">7</a></li>
+                    <li class="waves-effect"><a href="#!">8</a></li>
+                    <li class="waves-effect"><a href="#!">9</a></li>
+                    <li class="waves-effect"><a href="#!">10</a></li>
+                    <li class="waves-effect"><a href="#!">10</a></li>
+                    <li class="waves-effect"><a href="#!">11</a></li>
+                    <li class="waves-effect"><a href="#!">12</a></li>
+                    <li class="waves-effect"><a href="#!">13</a></li>
+                    <li class="waves-effect"><a href="#!">14</a></li>
+                    <li class="waves-effect"><a href="#!">15</a></li>
+                    <li class="waves-effect"><a href="#!">16</a></li>
+                    <li class="waves-effect"><a href="#!">17</a></li>
+                    <li class="waves-effect"><a href="#!">18</a></li>
+                    <li class="waves-effect"><a href="#!">19</a></li>
+                    <li class="waves-effect"><a href="#!">20</a></li>
+                    <li class="waves-effect"><a href="#!">21</a></li>
+                    <li class="waves-effect"><a href="#!">22</a></li>
+                    <li class="waves-effect"><a href="#!">23</a></li>
+                    <li class="waves-effect"><a href="#!">24</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="app-footer page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"><img src="../../../assets/imgs/logo.svg" /></h5>
+                    <p class="grey-text text-lighten-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Contact Me</h5>
+                    <ul>
+                        <li>
+                            <p class="grey-text text-lighten-3">
+                                Email:475212506@qq.com
+                            </p>
+                        </li>
+                        <li>
+                            <p class="grey-text text-lighten-3" href="#!">
+                                Tel:18502342464
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row liuxin-nomb">
+                    <div class="col s12 m6 center-align">
+                        <p>Copyright © 2016 ExpSets</p>
+                    </div>
+                    <div class="footer-copyright__links-container col s12 m6 center">
+                        <a class="app-footer__social-link grey-text text-lighten-3" href="#!">
+                            <img height="100%" src="../../../assets/imgs/001-github-sign.png">
+                        </a>
+                        <a class="app-footer__social-link grey-text text-lighten-3" href="#!">
+                            <img src="../../../assets/imgs/002-social-google-plus-square-button.png">
+                        </a>
+                        <a class="app-footer__social-link grey-text text-lighten-3" href="#!">
+                            <img src="../../../assets/imgs/003-twitter-logo-on-black-background.png">
+                        </a>
+                        <a class="app-footer__social-link grey-text text-lighten-3" href="#!">
+                            <img src="../../../assets/imgs/004-facebook-logo.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="../../../vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../../../vendor/materialize/dist/js/materialize.js"></script>
+    <!-- configs -->
+    <script type="text/javascript">
+    var configs = {
+        globalFileName: "home-index"
+    }
+    </script>
+    <!-- concatenate js -->
+    <script type="text/javascript" src="../../common/js/all.min.js"></script>
+</body>
+
+</html>

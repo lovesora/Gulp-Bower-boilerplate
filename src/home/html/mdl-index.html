@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>ExpSets</title>
+    <!-- Google Material Design Lite -->
+    <link rel="stylesheet" href="/public/mdl/material.min.css">
+    <script src="/public/mdl/material.min.js"></script>
+    <!-- Materialize --><!-- 
+    <link rel="stylesheet" href="/public/materialize/materialize.css">
+    <script src="/public/materialize/materialize.js"></script> -->
+    <!-- react -->
+    <script type="text/javascript" src="../../../vendor/react/react.min.js"></script>
+    <script type="text/javascript" src="../../../vendor/react/react-dom.min.js"></script>
+    <!-- configs -->
+    <script type="text/javascript">
+    var configs = {
+        globalFileName: "home__mdl-index"
+    }
+    </script>
+    <!-- concatenate js&css -->
+    <script type="text/javascript" src="../../common/js/all.min.js"></script>
+    <link rel="stylesheet" href="../../common/css/all.min.css">
+</head>
+
+<body id="home-index">
+    <div class="mdl-layout mdl-js-layout">
+        <header class="app-header mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="app-header-logo mdl-layout__title">
+                    <img src="../../../assets/imgs/logo.svg" />
+                </span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="app-navigation mdl-navigation">
+                    <a class="mdl-navigation__link" href="#">首页</a>
+                    <a class="mdl-navigation__link" href="#">文章</a>
+                    <a class="mdl-navigation__link" href="#">问答</a>
+                </nav>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable ">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="sample6">
+                        <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="app-drawer-title mdl-layout__title">
+                <img src="../../../assets/imgs/logo.svg" />
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#">首页</a>
+                <a class="mdl-navigation__link" href="#">文章</a>
+                <a class="mdl-navigation__link" href="#">问答</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="main-part1">
+                <img src="/assets/imgs/img-slider-1.jpg" height="100%" width="100%">
+            </div>
+            <div class="main-part2">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                        <!-- card -->
+                        <div class="card-container mdl-card mdl-shadow--2dp liuxin-hoverable">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Welcome</h2>
+                            </div>
+                            <div class="card-img-container mdl-card__media">
+                                <img class="card-img" src="/assets/imgs/img-card-1.jpg">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--N-col-phone">
+                        <!-- card -->
+                        <div class="card-container mdl-card mdl-shadow--2dp liuxin-hoverable">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Welcome</h2>
+                            </div>
+                            <div class="card-img-container mdl-card__media">
+                                <img class="card-img" src="/assets/imgs/img-card-2.jpg">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--N-col-phone">
+                        <!-- card -->
+                        <div class="card-container mdl-card mdl-shadow--2dp liuxin-hoverable">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Welcome</h2>
+                            </div>
+                            <div class="card-img-container mdl-card__media">
+                                <img class="card-img" src="/assets/imgs/img-card-3.jpg">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                        <!-- card -->
+                        <div class="card-container mdl-card mdl-shadow--2dp liuxin-hoverable">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Welcome</h2>
+                            </div>
+                            <div class="card-img-container mdl-card__media">
+                                <img class="card-img" src="/assets/imgs/img-card-4.jpg">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--N-col-phone">
+                        <!-- card -->
+                        <div class="card-container mdl-card mdl-shadow--2dp liuxin-hoverable">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Welcome</h2>
+                            </div>
+                            <div class="card-img-container mdl-card__media">
+                                <img class="card-img" src="/assets/imgs/img-card-5.jpg">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--N-col-phone">
+                        <!-- card -->
+                        <div class="card-container mdl-card mdl-shadow--2dp liuxin-hoverable">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Welcome</h2>
+                            </div>
+                            <div class="card-img-container mdl-card__media">
+                                <img class="card-img" src="/assets/imgs/img-card-6.jpg">
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Get Started</a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer -->
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">
+                            <img src="../../../assets/imgs/logo.svg" />
+                        </div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">关于我</a></li>
+                            <li><a href="#">小伙伴</a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-mini-footer__right-section">
+                        <button class="mdl-mini-footer__social-btn">
+                            <img src="../../../assets/imgs/001-github-sign.png">
+                        </button>
+                        <button class="mdl-mini-footer__social-btn">
+                            <img src="../../../assets/imgs/002-social-google-plus-square-button.png"></button>
+                        <button class="mdl-mini-footer__social-btn">
+                            <img src="../../../assets/imgs/003-twitter-logo-on-black-background.png"></button>
+                        <button class="mdl-mini-footer__social-btn">
+                            <img src="../../../assets/imgs/004-facebook-logo.png"></button>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

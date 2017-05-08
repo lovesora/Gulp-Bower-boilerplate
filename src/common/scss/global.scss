@@ -1,0 +1,56 @@
+@import "variables";
+@import "unified";
+
+//App global elements
+.app-header {
+    &__nav {
+    }
+    &__logo-link {
+        margin-top: 8px;
+    }
+}
+
+.app-login {
+    &__content {
+        padding-bottom: 0px !important;
+    }
+    &__auxiliary {
+        margin-top: 16px;
+    }
+    &__btn {
+        &-login {
+            margin-right: 16px !important;
+            margin-left: 16px !important;
+        }
+    }
+}
+
+.app-signup {
+    &__btn {
+        &-signup {
+            margin-right: 16px !important;
+            margin-left: 16px !important;
+        }
+    }
+}
+
+.app-footer {
+    &__social-link {
+        margin-left: 10px;
+    }
+
+    .footer-copyright {
+        &__links-container {
+            padding-top: 8.5px !important;
+        }
+    }
+}
+
+.side-nav {
+    .userView {
+        // drawer
+        .background {
+            background-color: $primary-color;
+        }
+    }
+}

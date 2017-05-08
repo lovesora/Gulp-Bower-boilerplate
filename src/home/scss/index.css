@@ -1,0 +1,26 @@
+.home-index .app-header__nav {
+  transition: background-color .375s; }
+.home-index .carousel__container {
+  width: 100%;
+  margin-top: -64px; }
+.home-index .carousel-item:nth-child(1) {
+  background: url(../../../assets/imgs/carousel_1.jpg) center no-repeat; }
+.home-index .carousel-item:nth-child(2) {
+  background: url(../../../assets/imgs/carousel_2.jpg) center no-repeat; }
+.home-index .carousel-item:nth-child(3) {
+  background: url(../../../assets/imgs/carousel_3.jpg) center no-repeat; }
+.home-index .carousel-item:nth-child(4) {
+  background: url(../../../assets/imgs/carousel_4.jpg) center no-repeat; }
+.home-index__content .card-img {
+  width: 100%;
+  margin-top: -50%; }
+  .home-index__content .card-img-container {
+    height: 240px;
+    overflow-y: hidden; }
+.home-index__content .card-title {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+
+
+/*# sourceMappingURL=index.css.map */

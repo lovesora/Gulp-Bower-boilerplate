@@ -1,0 +1,40 @@
+.home {
+    &-index {
+        .app-header {
+            &__nav {
+                transition: background-color .375s;
+            }
+        }
+
+        .carousel {
+            &__container {
+                width: 100%;
+                margin-top: -64px;
+            }
+
+            @for $i from 1 through 4 {
+                &-item:nth-child(#{$i}) {
+                    background: url(../../../assets/imgs/carousel_#{$i}.jpg) center no-repeat;
+                }
+            }
+        }
+        &__content {
+            //card list
+            //set imgs vertically align
+            .card {
+                &-img {
+                    width: 100%;
+                    margin-top: -50%;
+                    &-container {
+                        height: 240px;
+                        overflow-y: hidden;
+                    }
+                }
+                &-title {
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.background-color--transparent {
+  background-color: transparent; }
+
+.app-header__logo-link {
+  margin-top: 8px; }
+
+.app-login__content {
+  padding-bottom: 0px !important; }
+.app-login__auxiliary {
+  margin-top: 16px; }
+.app-login__btn-login {
+  margin-right: 16px !important;
+  margin-left: 16px !important; }
+
+.app-signup__btn-signup {
+  margin-right: 16px !important;
+  margin-left: 16px !important; }
+
+.app-footer__social-link {
+  margin-left: 10px; }
+.app-footer .footer-copyright__links-container {
+  padding-top: 8.5px !important; }
+
+.side-nav .userView .background {
+  background-color: #03A9F4; }
+
+
+
+/*# sourceMappingURL=global.css.map */
